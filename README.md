@@ -1,6 +1,9 @@
 # file-download
 
 ```
+from django.http import FileResponse
+
+
 class FileDownloadView(generics.RetrieveAPIView):
     queryset = models.File.objects.all()
     serializer_class = None
